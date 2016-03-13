@@ -1,0 +1,136 @@
+        March 2015
+ Sun Mon Tue Wed Thu Fri Sat
+   1   2   3   4   5   6   7
+   8   9  10  11  12[13]  14
+  15  16  17  18  19  20  21
+  22  23  24  25  26  27  28
+  29  30  31
+
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+This is the first run
+
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+[D]ay view or [M]onth view?
+Fri, March 13, 2015
+
+[P]revious or [N]ext or [M]ain menu ?
+Thu, March 12, 2015
+
+[P]revious or [N]ext or [M]ain menu ?
+Fri, March 13, 2015
+
+[P]revious or [N]ext or [M]ain menu ?
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+[D]ay view or [M]onth view?
+        March 2015
+ Sun Mon Tue Wed Thu Fri Sat
+   1   2   3   4   5   6   7
+   8   9  10  11  12  13  14
+  15  16  17  18  19  20  21
+  22  23  24  25  26  27  28
+  29  30  31
+
+[P]revious or [N]ext or [M]ain menu?
+        Feb 2015
+ Sun Mon Tue Wed Thu Fri Sat
+   1   2   3   4   5   6   7
+   8   9  10  11  12  13  14
+  15  16  17  18  19  20  21
+  22  23  24  25  26  27  28
+
+
+[P]revious or [N]ext or [M]ain menu ?
+        Jan 2015
+ Sun Mon Tue Wed Thu Fri Sat
+                   1   2   3
+   4   5   6   7   8   9  10
+  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24
+  25  26  27  28  29  30  31
+
+[P]revious or [N]ext or [M]ain menu ?
+        Dec 2014
+ Sun Mon Tue Wed Thu Fri Sat
+       1   2   3   4   5   6
+   7   8   9  10  11  12  13
+  14  15  16  17  18  19  20
+  21  22  23  24  25  26  27
+  28  29  30  31
+
+[P]revious or [N]ext or [M]ain menu ?
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+Please enter title:
+Please enter date in MM/DD/YYYY format:
+Please enter start time in HH:MM 24-hour clock format:
+Please enter end time in HH:MM 24-hour clock format. If no end time, please leave blank.
+
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+Please enter title:
+Please enter date in MM/DD/YYYY format:
+Please enter start time in HH:MM 24-hour clock format:
+Please enter end time in HH:MM 24-hour clock format. If no end time, please leave blank.
+
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+[D]ay view or [M]onth view?
+Fri, March 13, 2015
+Office Hours 09:00 - 11:00
+
+[P]revious or [N]ext or [M]ain menu ?
+Thu, March 12, 2015
+
+[P]revious or [N]ext or [M]ain menu ?
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+[D]ay view or [M]onth view?
+        March 2015
+ Sun Mon Tue Wed Thu Fri Sat
+   1   2   3   4   5   6   7
+   8   9  10  11  12[13]  14
+  15  16  17  18  19  20  21
+  22  23  24  25  26  27  28
+  29  30  31
+
+[P]revious or [N]ext or [M]ain menu?
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+Please enter date in MM/DD/YYYY format:
+Fri, June 12, 2015
+Leave for England 19:00
+
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+2015
+    Fri, March 13 09:00 - 11:00 Office Hours
+    Fri, June 12 19:00 Leave for England
+
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+[S]elected or [A]ll?
+Please enter date in MM/DD/YYYY format:
+
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+2015
+    Fri, March 13 09:00 - 11:00 Office Hours
+
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+[S]elected or [A]ll?
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+Please enter title:
+Please enter date in MM/DD/YYYY format:
+Please enter start time in HH:MM 24-hour clock format:
+Please enter end time in HH:MM 24-hour clock format. If no end time, please leave blank.
+
+Select one of the following options:
+[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
