@@ -1,0 +1,127 @@
+User test Case
+
+# case 1: User wants to load the calendar #
+------------------------------------------------------------------------
+
+1. user starts the program by the commandline
+2. the program starts and displays main prompt:
+	Select one of the following options:
+	[L]oad [V]iew by [C]reate [G]o to [E]vent list [D]elete [Q]uit
+3. User enters L or l to load the calendar
+4. The program opens the file events.txt
+5. the program creates event objects from the file then populates the calendar object with the events
+6. the program returns to step 1
+
+variation: in step 4 no events.txt exist
+4. The program creates the file "events.txt"
+5. the program returns to step 1
+
+# case 2: User wishes to view the events on the calendar ([V]iew by) #
+------------------------------------------------------------------------
+1. At main prompt, user enters V or v to select [V]iew by
+2. the program displays the prompt: "[D]ay view or [M]onth view? "
+3. the user enters D or d.
+4. the program gets the current Day and its associated events
+5. the program prints the current dayName, MonthAbbr numDay, Year and then
+prints the event followed by its time. Example:
+
+	Tuesday, Mar 16, 2016
+	Branden's First Class 12:00 - 13:15
+
+6. The program prints a blank line, followed by a menu to see the previous,
+next day or main menu:
+
+[P]revious or [N]ext or [M]ain menu ?
+
+7. User enters n or N
+8. The program gets the next day and does steps 5 & 6
+9. User enters m or M
+
+variation 1: in step 3, user enter M or m
+4. program gets the current Month
+5. The program prints Month year, followed by days of the week, then begins
+filling the day numbers into the calendar, if there is an event on the day to
+print, program surrounds the day in brackets. Example
+
+	  March 2016
+	Su  Mo  Tu  We  Th  Fr  Sa
+	----|----1---2---3---4---5
+	[6]--7---8 and so forth
+(note -- and | are actually spaces, just put in to count the spaces more
+easily)
+6. Same as original use case
+7. User enters M or m for main menu
+
+# case 3: The user wants to create an event #
+------------------------------------------------------------------------ 
+1. At main menu the user enters C or c to create an event 
+2. The program prompts user for the title:
+
+	Please enter a title: 
+
+3. the user enters a string. Program does not check the values entered.
+4. The program prompts user for the date:
+
+	Please enter a date (MM/DD/YYYY): 
+5. The user enters the day for the event using the above format.  
+6. The program checks the data entered matches the correct format.  
+7. The program prompts user for start time in 24h format: 
+
+	Please enter a start time (hh:mm): 
+
+8. The program checks the data the user entered, making sure it is in 24h format.  
+9. The program prompts user for end time in 24h format: 
+
+	Please enter an end time, leave blank if none (hh:mm): 
+
+10. The program checks first if line is blank, if not blank, the program checks the time is entered in the correct format.  
+11. The program adds the event to the calendar.  
+12. The program returns to the main menu.  
+
+variation 1: User enters in different format, such as 3:30 pm instead of 15:30 
+10. Program checks input, finds invalid input, program returns to step 9.  
+
+# case 4: Go to a date #
+ ------------------------------------------------------------------------ 
+1. The user enter G or g to go to an event.
+2. The program prompts the user for the date:
+	
+	Enter a date (MM/DD/YYYY):
+
+3. Verify the user entered the date in the correct format.
+4. Search for date.
+5. Display the day view of the day requested.
+
+# case 5: show the event list #
+------------------------------------------------------------------------
+1. The user enters E or e to display the scheduled events.
+2. program loads all the events into an arraylist or array
+3. Program iterates through list, but first displaying year, then each eavent
+by start date then start time. Format as follows:
+
+	2016
+	--Friday Mar 18 13:15 - 14:00 Dentist
+	--Tuesday April 26 15:00 - 16:00 Job Interview
+	2015
+	--Friday June 10 17:00 Leave for korea
+
+# case 6: delete an event #
+1. User enters d or D to start the delete process.
+2. The program prompts to delete selected events or all events:
+	[S]elected or [A]ll?
+3. The user enter s or S to select a date.
+4. Program prompts user to enter a date:
+	Enter the date (MM/DD/YYY):
+5. User enters the date.
+6. Program verifies correct date formate useed
+7. Program parses date.
+8. Program finds date
+9. program deletes each event on the specified date.
+
+variation 1: In step 3, user enters A or a
+4. the program deletes the whole calendar (does a complete reset).
+
+# case 6: Quit the program #
+1. User enters q or Q.
+2. Program goes through calendar and parses dates and events into text file
+3. program exits
