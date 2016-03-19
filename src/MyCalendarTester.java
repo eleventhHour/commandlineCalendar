@@ -12,7 +12,7 @@ public class MyCalendarTester {
         Scanner usrInpt = new Scanner(System.in);
         while(true) {
             System.out.print(mainMenu);
-            char option = usrInpt.next().toLowerCase().charAt(0);
+            char option = usrInpt.nextLine().toLowerCase().charAt(0);
 
             switch (option) {
                 case 'l':
@@ -48,7 +48,7 @@ public class MyCalendarTester {
         Scanner in = new Scanner(System.in);
 
         System.out.println("Enter a date (MM/DD/YYYY) : ");
-        String date = in.next();
+        String date = in.nextLine();
 
     }
     private static void deleteEventOption() {
@@ -58,13 +58,13 @@ public class MyCalendarTester {
         Scanner in = new Scanner(System.in);
 
         System.out.println( "Enter a title: ");
-        String title = in.next();
+        String title = in.nextLine();
 
         System.out.println( "Enter a date (MM/DD/YYYY) : ");
-        String date = in.next();
+        String date = in.nextLine();
 
         System.out.println( "Enter a start time (hh:mm) : ");
-        String time = in.next();
+        String time = in.nextLine();
    }
 
     private static void viewOption() {
@@ -72,7 +72,7 @@ public class MyCalendarTester {
 
         String viewByMenu = "[D]ay view or [M]onth view?";
         System.out.print(viewByMenu);
-        char choice = in.next().toLowerCase().charAt(0);
+        char choice = in.nextLine().toLowerCase().charAt(0);
 
         do {
          String placeHolderText = "This text in place where we should print out the day or month view\n" +
@@ -83,7 +83,7 @@ public class MyCalendarTester {
 
         String previousOrNextMenu = "[P]revious or [N]ext or [M]ain menu ?\n";
         System.out.print(previousOrNextMenu);
-        choice = in.next().toLowerCase().charAt(0);
+        choice = in.nextLine().toLowerCase().charAt(0);
         }while(choice != 'm');
 
     }
