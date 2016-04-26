@@ -1,5 +1,6 @@
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.HashMap;
 
 /**
  * Created by branden on 3/18/2016.
@@ -19,9 +20,7 @@ public class EventTester {
         Event vnt = new Event(title, year, month,
                 day, hour, minute, endHour, endMinute);
 
-        GregorianCalendar cal = new GregorianCalendar();
-        System.out.print("The numeric year is ");
-        System.out.println(cal.get(Calendar.YEAR));
+
 
         try {
             System.out.println(vnt.getDate());
@@ -56,6 +55,30 @@ public class EventTester {
             System.err.println("One of the test threw an exception");
 
         }
+
+        Event e1 = new Event( "event1", new GregorianCalendar(2016, 02, 18, 12, 0));
+        Event e2 = new Event( "event2", new GregorianCalendar(2016, 02, 18, 13, 0));
+
+        if (e1.equals(e2)) {
+            System.out.println("The objects are equal");
+        }
+        else {
+            System.out.println("The objects are not equal");
+        }
+
+        HashMap<Integer, Event> hm = new HashMap<Integer, Event>();
+
+        hm.put(e1.hashCode(), e1);
+        hm.put(e2.hashCode(), e2);
+        System.out.println(hm.get(e1.hashCode()).getEventString());
+        System.out.println(hm.get(e2.hashCode()).getEventString());
+        //testing the hashcode function of gregorian calendar
+        GregorianCalendar c1 = new GregorianCalendar(2016, 02, 18);
+        GregorianCalendar c2 = new GregorianCalendar(2016, 02, 18);
+        System.out.println("This is the hashcode for c1 " + c1.hashCode());
+        System.out.println("This is the hashcode for c2 " + c2.hashCode());
+
+
     }
 
 

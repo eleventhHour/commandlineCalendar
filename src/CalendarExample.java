@@ -48,9 +48,19 @@ public class CalendarExample
 		System.out.print(c.get(Calendar.DAY_OF_MONTH));
 		System.out.print(" ");
 		System.out.print(c.get(Calendar.YEAR));
-		GregorianCalendar temp = new GregorianCalendar(c.get(Calendar.YEAR), c.get(Calendar.MONTH), 1);
+		GregorianCalendar temp = new GregorianCalendar(c.get(Calendar.YEAR), 1, 1);
+        System.out.println();
+        System.out.println("The month is " + arrayOfMonths[temp.get(Calendar.MONTH)]);
 	    System.out.println("The first day of this month is " + arrayOfDays[temp.get(Calendar.DAY_OF_WEEK)-1]);
-				
+		System.out.println("Printing day of week " + temp.get(Calendar.DAY_OF_WEEK));
+        System.out.println("Printing last day of month " + temp.getActualMaximum(Calendar.DAY_OF_MONTH));
+        System.out.println("Different method for first of week " + temp.getMinimum(Calendar.DAY_OF_WEEK));
+        GregorianCalendar cal = new GregorianCalendar(c.get(Calendar.YEAR), c.get(Calendar.MONTH), c.get(Calendar.DAY_OF_MONTH));
+        if ( cal.hashCode() == c.hashCode() ){
+            System.out.println("Hash code matches! " + cal.hashCode() + " " + c.hashCode());
+        }
+        else System.out.println("Hash code don't match " + cal.hashCode() + " " + c.hashCode());
+
 	}
 		
 	}

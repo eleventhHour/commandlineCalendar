@@ -1,10 +1,32 @@
+import java.io.Serializable;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 /**
  * Created by branden on 3/12/2016.
+ * A class to store the event information
  */
-public class Event {
+public class Event implements Comparable<Event>, Cloneable, Serializable {
+
+    /**
+     * Clones the class
+     * @return the cloned class
+     */
+    public Event Clone() {
+        try{
+            return (Event) super.clone();
+        }
+        catch (CloneNotSupportedException e)
+        {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    public int compareTo(Event o) {
+        return this.getEventInfo().compareTo(o.getEventInfo());
+    }
 
     enum MONTHS {
         Jan, Feb, March, Apr, May, June, July, Aug, Sep, Oct, Nov, Dec;
@@ -73,6 +95,14 @@ public class Event {
     }
 
     /**
+     * get the year of the event
+     * @return the year of the event
+     */
+    public int getYear() {
+        return eventDateStart.get(Calendar.YEAR);
+    }
+
+    /**
      * Return the abbreviated name of the day, the name of the
      * month, the day, and the year as a string. The format is as follows:
      * Day, Month DD, YYYY
@@ -126,7 +156,13 @@ public class Event {
 
     }
 
-    String addLeadingZero(int number) {
+    /**
+     * private class to format numbers correct when
+     * in the single digits.
+     * @param number the number to format
+     * @return the string representation for the number
+     */
+    private String addLeadingZero(int number) {
         if (number < 10) {
             return "0" + number;
         } else {
@@ -146,5 +182,42 @@ public class Event {
         String year = addLeadingZero(eventDateStart.get(Calendar.YEAR));
         return numMonth + "/" + numDay + "/" + year + ": " +
                 getTime() + " " + getTitle();
+    }
+
+    /**
+     * Returns a hashCode using the GregorianCalendar hashCode based
+     * solely on the day, month and year.
+     * @return an integer hashcode value
+     */
+    @Override
+    public int hashCode() {
+        //this is going to be a doozy one liner
+        return new GregorianCalendar(eventDateStart.get(Calendar.YEAR), eventDateStart.get(Calendar.MONTH),
+                eventDateStart.get(Calendar.DAY_OF_MONTH)).hashCode();
+    }
+
+    /**
+     * Returns a comparison between the date and time adn title. Allows
+     * the program to have two of the same hashcode for events
+     * on the same day.
+     * @param e the Event to compare with
+     * @return true or false whether the event has the same day
+     */
+    @Override
+    public boolean equals(Object e) {
+        return this.getEventInfo().equals(((Event)e).getEventInfo());
+    }
+
+    /**
+     * Returns a string of the the date and time of the event in the format
+     * of YYYYMMDDHH:MM - HH:MM or if no end time then the format
+     * is YYYYMMDDHH:MM.
+     * @return the date and time of the event as a string
+     */
+    public String getEventInfo() {
+        String numMonth = addLeadingZero(eventDateStart.get(Calendar.MONTH)+1);
+        String numDay = addLeadingZero(eventDateStart.get(Calendar.DAY_OF_MONTH));
+        String year = addLeadingZero(eventDateStart.get(Calendar.YEAR));
+        return year + numMonth + numDay + getTime()+getTitle();
     }
 }
